@@ -1,0 +1,133 @@
+		*{
+			margin:0;
+			padding:0;
+		}
+		header{
+			margin:0 auto;
+			
+		}
+		li{
+			list-style: none;
+		}
+		.logo-ref{
+			margin:10px auto;
+			width:100px;
+			padding:5px;
+			line-height: 35px;
+			font-size:16px;
+			font-family: arial;
+		}
+		.logo-ref img{
+			height: 100%;
+			width:100%;
+			display:block;
+		}
+		.menu{
+			display:flex;
+			flex-wrap: wrap;
+			position: relative;
+			width:50%;
+			margin:0 auto;
+		}
+		.menu li{
+			flex-grow: 1;
+			text-align: center;
+			font-family: arial;
+			position: relative;
+		}
+		.menu > li{
+
+		}
+		.menu li.active{		
+			border-bottom:3px solid #2980b9;
+		}
+		.menu li a{
+			box-sizing: border-box;
+			padding:7px 4px;
+			font-weight: bold;
+			font-size: 15px;
+			display: block;
+			color:#333;  
+		}
+		.menu li a:hover{
+			transition: all 0.3s ease;
+		}
+		.menu li:hover > .sub-menu{
+			display: block;
+		}
+		.sub-menu{
+			display: none;
+			position: absolute;
+			width:200px;
+			margin-top:3px;
+			box-shadow: 0px 0.4px 1px 0px lightgray;
+			padding:3px;
+			z-index: 1;
+			background: white;
+		}
+		.sub-menu li a{
+			background:white;
+			padding:5px;
+		}
+		.sub-menu li{
+			text-align: left;
+			border-bottom:1px solid lightblue;
+		}
+		.important-news{
+			border:1px solid;
+			width:50%;
+			height: 500px;
+			max-height: 800px;
+			margin:0 auto;
+			padding:5px;
+			box-sizing: border-box;
+			display:flex;
+			justify-content: space-between;
+		}
+		.important-news .left-panel{
+			padding:4px;
+			border:1px solid red;
+			box-sizing: border-box;
+			width:65%;
+		}
+		.important-news .right-panel{
+			border:1px solid orange;
+			box-sizing: border-box;
+			height: 100%;
+			width:35%;
+			overflow-y: scroll;
+		}
+		.right-panel::-webkit-scrollbar{
+			width:5px;
+		}
+
+		.right-panel::-webkit-scrollbar-thumb{
+			background: red;
+		}
+		
+		.right-panel .news-item{
+			display: flex;
+			margin:5px 0px 5px 0px;/*dzel estex*/
+			border:1px solid #333;
+			box-sizing: border-box;
+			
+		}
+		.news-img-content{
+			border:1px solid lightblue;
+			margin:4px auto;
+			height: 170px;
+			width:100%;
+		}
+		.news-img-content img{
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: bottom;
+		}
+		.test img{
+			max-height: 300px;
+		}
+		.test{
+			width:70%;
+			border:1px solid;
+		}
